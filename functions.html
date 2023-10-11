@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning</title>
+</head>
+<body>
+    <div class="container">
+        <button onclick="myFunction()">Click me</button>
+        <button inputmode="number">Enter value</button>
+        <input type="number" id="myNumber" value="0">
+    </div>
+    
+    <script>
+
+        function myFunction(){
+            let msg = prompt("Enter Password");
+        let input = msg;
+        if(input != 67 & input != 420){
+            myFunction();
+
+        }else{
+            let output = alert("You can enter enter this website")
+           // console.log('ok you can enter');
+        }
+    }
+
+    //using (=>) as function syntax
+    var a = [
+  "We're up all night 'til the sun",
+  "We're up all night to get some",
+  "We're up all night for good fun",
+];
+
+// These two assignments are equivalent:
+
+// Old-school:
+var a2 = a.map(function(s){ return s.length });
+
+// Using arrow functions
+var a3 = a.map( s => s.length );
+
+// both a2 and a3 will be equal to [31, 30, 31, 31]
+
+//new & this keyword
+function Fruit(color, taste, seeds) {
+this.color = color;
+this.taste = taste;
+this.seeds = seeds;
+}
+
+// Create an object
+const fruit1 = new Fruit('Yellow', 'Sweet', 1);
+
+// Display the result
+document.write(fruit1.color);
+
+    </script>
+</body>
+</html>

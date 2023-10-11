@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="Practice.css"/>
+<body>
+    <div class="container">
+    <button onclick="myFunction()">Click me</button>
+    <button inputmode="number">Enter value</button>
+    <input type="number" id="myNumber" value="0">
+    <input type="number" id="myNumber1" value="0">
+    <output type="number" id="myNumber2" value="0">
+</div>
+
+<script>
+    function myFunction(){
+        let c = prompt('SMILE');
+       // console.log(c);
+    }
+    let aClass={
+        student1:{
+        name: 'karni',
+        marks: 34,
+        subject: 'science'
+    },
+    student2:{
+        name: 'Anu',
+        marks: 66,
+        subject: 'english'
+    },
+    student3:{
+        name: 'john',
+        marks: 74,
+        subject: 'hindi'
+    }
+}
+for(let key in aClass){
+    value = aClass[key];
+    console.log(key+ "-" + value);
+}
+        
+</script>
+
+</body>
+</html>

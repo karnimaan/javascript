@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        function myDisplayer(some){
+            document.getElementById('demo').innerHTML = some;
+        }
+        function myFirst(){
+            myDisplayer('Hello');
+        }
+        function mySecond(){
+            myDisplayer('Goodbye');
+        }
+        myFirst();
+        mySecond();
+
+
+        function loadScript(src,callback){
+            let script = document.createElement('script')
+            script.src = src;
+            script.onload = () => callback(script)
+            document.head.append(script)
+        }
+        loadScript('https://cdn.harry.com',(script)=>{
+            alert('script is loaded')
+            alert(script.src)
+        });
+
+        let promise = new Promise(function(fulfill,error){
+            let x = 'me';
+        });
+        
+        //then & catch
+    promise.then
+    (function(result){/*handle*/},
+    function(error){/*handle error*/}
+    );
+
+
+    const myPromise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve("foo");
+  }, 300);
+});
+
+myPromise
+  .then(handleFulfilledA, handleRejectedA)
+  .then(handleFulfilledB, handleRejectedB)
+  .then(handleFulfilledC, handleRejectedC);
+    
+  myPromise
+  .then((value) => `${value} and bar`)
+  .then((value) => `${value} and bar again`)
+  .then((value) => `${value} and again`)
+  .then((value) => `${value} and again`)
+  .then((value) => {
+    console.log(value);
+  })
+  .catch((err) => {
+    console.error(err);
+  });
+
+async function karni(){
+    return 7;
+}
+karni().then(alert);
+
+//error handling
+try{
+    hey;//try the code
+}
+catch (err){
+   alert(err.name) //error handling
+   alert(err.message)
+   alert(err.stack)
+}
+    </script>
+</body>
+</html>

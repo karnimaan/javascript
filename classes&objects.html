@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning</title>
+</head>
+<body>
+    <script>
+        class MyClass{
+         constructor(){}
+         method1(){}
+         method2(){}
+        }
+
+        class User{
+         work(){}
+         rMethod(){}
+         sMethod(){}
+        }
+        
+        //class inheritence (extent)  
+        class Animal{
+        }
+        class Monkey extends Animal{
+            hide(){
+                alert(`${this.name}hides!`);
+            }
+        }
+        console.log(Animal)
+        let Monkey = new Monkey('Monu')
+        Monkey.run(7);
+        Monkey.hide();
+        
+
+        let timerId = setTimeout(alert("hello"),10000)
+        let timerId1 = setTimeout(alert("world"),5000)
+
+        const nums =[2,3];
+        let avg =  (nums[0]+nums[1])/2;
+        console.log(avg)
+        
+    </script>
+</body>
+</html>

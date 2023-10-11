@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning</title>
+</head>
+<body>
+    <div class="container">
+
+        <span id="span">Smokes</span>
+    </div>
+
+    <script>
+        // let a = alert("you are inside this page");
+        // let b = prompt("enter your name");
+        // let c = confirm("click ok to confirm");
+
+let x= prompt('enter a password to change color');
+if(x=123){
+document.body.style.background="yellow";
+   
+} else{
+    document.body.style.background="black";
+}
+
+        let d = prompt("Enter Your Age");
+        if(d>=18){
+            let e = alert("You can Drive :)");
+        }        else if(d<0){
+            d= prompt('enter a valid age');
+        } else if(d=0){
+            // d=location.href="https://google.com"
+        }
+        
+        else {
+          e = alert("you cannot drive");
+            }
+        
+           //location.href="https://google.com";
+
+        alert(document.documentElement.parentNode);   
+        alert(document.firstElementChild);
+
+        let a= ['sim',23,34];
+        console.log(typeof(document))
+        console.log(typeof(prompt))
+
+        let span = document.getElementById('span');
+        span.style.color='red';
+    </script>
+</body>
+</html>

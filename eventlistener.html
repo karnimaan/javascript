@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning</title>
+</head>
+<body id="body">
+    <input value="hello" onclick="alert('hello')" type="button">
+    <button id="click me">Click Me!</button>
+    <button id="EL">An Event</button>
+    <p id="web content">content</p>
+    <script>
+        document.getElementById("click me").onclick= function myFuncton(){
+            alert("it is working");
+        }
+
+        function newFunction(){
+        document.getElementById("EL").onclick= prompt("Enter your name")
+    }
+        document.getElementById("EL").addEventListener(newFunction,EL)
+        
+        let timerId = setInterval(timePop, 5000);
+        clearTimeout(timerId);
+        function timePop(){
+            document.getElementById("web content").innerText= document.getElementById("click me").innerText;
+        }
+
+        document.getElementById("body").classList.toggle("class")
+        console.log(body);
+    </script>
+</body>
+</html>

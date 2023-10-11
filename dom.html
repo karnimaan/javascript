@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Dom</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body>
+    <div id="navbar">This is nav bar
+        <option>
+            Home Connect
+        </option>
+        <table><tbody>insert</tbody></table>
+        <span>hello</span>
+        <div hidden> you cant see me</div>
+        <p class="lists">ron
+            <li hidden id="element">harry</li>
+            <li>hermonie</li>
+            <li>karni</li>
+        </p>
+        <button onclick="setTimeout(myFunction,3000);"> after time click</button>
+
+
+    </div>
+    <script>
+   let sem =  document.getElementById('navbar').style.color="red"
+
+   let x = "span";
+   let y = x.firstChild;
+
+   document.getElementById("navbar").style.color='green';
+   console.log(document.getElementById("navbar").parentElement.style.color='green');
+   //document.getElementById("navbar").firstChild.style.color='red';
+   //document.getElementById("navbar").lastChild.style.color='green';
+   let mylist= document.querySelectorAll(".lists")
+   mylist.style.color = 'cyan';
+let r= document.getElementById("element").hasAttribute(name)
+let p= document.getElementById("element").setAttribute("class","democlass")
+   let t = document.getElementById("element").hidden;
+   let d = document.getElementById('navbar').dataset.one
+
+   function myFunction(){
+    alert('hello');
+   }
+
+   let div = document.createElement('div');
+   div.className = 'stats';
+   document.body.append(div)
+
+   let node =document.createElement('li')
+   node.prepend(div)
+   console.log(node);
+
+   let c = document.createElement('p') 
+   div.replaceWith(c)
+   console.log(node);
+   
+   node.remove();
+   const o = alert("there are clouds")
+        let timerId = setTimeout(myFunction => alert("never"),3000);
+        function myFunction(){
+            const x = alert("it may rain today");
+        }
+
+    </script>
+</body>
+</html>

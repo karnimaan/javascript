@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+
+</head>
+<body>
+    <input type="number" id="input" value="00">
+    <button onclick="myFunction()">Click me</button>
+    <script>
+        const myNumber = 64.50;
+       function myFunction(){
+        let inputN = document.getElementById('input').value;
+        if(inputN == myNumber){
+            alert("You guessed the right Number")
+        }else if(inputN < myNumber){
+            alert("Entered no. is less than required no.,Try Again")
+        }else if(inputN > myNumber){
+            alert("Entered no. is greater than required no.,Try Again")
+        }else{
+        return;}
+    }
+    </script>
+</body>
+</html>
